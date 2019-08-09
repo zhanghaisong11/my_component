@@ -1,7 +1,7 @@
 <template>
   <div class="img-box" @mousewheel="scroll" @touchmove.prevent v-show="isShowMode">
     <div class="close-button" @click="closeModel()">X</div>
-    <img draggable="false" @mousedown="move" :src="img" :style="{width:imgWidth + 'px'}">
+    <img draggable="false" ref='imageDom'  @mousedown="move" :src="img" :style="{width:imgWidth + 'px'}">
     <div class="left-button page-button" @click="before('last')">  </div>
     <div class="right-button page-button" @click="next('next')">  </div>
   </div>
@@ -69,8 +69,16 @@
         document.documentElement.style.overflow = "auto";
       },
       scroll: function (e) {
+
+        var domleft = this.$refs.imageDom.offsetLeft
         document.documentElement.style.overflow = "hidden";
-        this.imgWidth = this.imgWidth + e.deltaY * 10
+        if(e.deltaY> 0){
+          this.$refs.imageDom.style.left = domleft - 5 + 'px'
+          this.imgWidth = this.imgWidth +  10
+        }else if(e.deltaY < 0){
+          this.$refs.imageDom.style.left = domleft + 5 + 'px'
+          this.imgWidth = this.imgWidth - 10
+        }
       },
       move: function (e) {
         let odiv = e.target;        //获取目标元素
