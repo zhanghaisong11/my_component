@@ -2,7 +2,6 @@
   <div class="select-box" v-cloak >
     <div @click="taskSelectBoxClick">
       <p class="fl" v-text="selectLabel"></p>
-      <i class="fr el-icon-caret-bottom"></i>
     </div>
     <ul class="option-box" v-show="isShowTaskSelect">
       <li v-for="(option,key) in options" :key="key" @click="chooseTaskType(option)"
@@ -143,6 +142,18 @@
     text-overflow:ellipsis;
     white-space: nowrap;
     height: 30px;
+    position: relative;
+  }
+
+  .select-box:before{
+    width: 0;
+    height: 0;
+    border: 7px transparent solid;
+    border-top-color: #38a8f0;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    content: "";
   }
 
   .select-box .option-box {
