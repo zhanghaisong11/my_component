@@ -11,7 +11,7 @@
 
     store.prototype.get = function (key) {    //获取数据
         checkKeyExist(key, 'get');
-        var infoCache = window.localStorage.getItem(this.nameSpaces + key);
+        var infoCache = window.localStorage .getItem(this.nameSpaces + key);
         if (!infoCache) {
             return null;
         }

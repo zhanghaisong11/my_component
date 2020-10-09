@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c92c19e6-f2c1-46c6-8bd7-4ae986059a09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue_component/Message/Message.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_component/Message/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_component/Message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/picture_stitching.html" beforeDir="false" afterPath="$PROJECT_DIR$/picture_stitching.html" afterDir="false" />
-    </list>
+    <list default="true" id="c92c19e6-f2c1-46c6-8bd7-4ae986059a09" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -232,12 +226,12 @@
       <workItem from="1565334355489" duration="20000" />
       <workItem from="1565337980187" duration="1071000" />
       <workItem from="1570514348645" duration="938000" />
-      <workItem from="1591672050032" duration="266000" />
+      <workItem from="1591672050032" duration="511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3619000" />
+    <option name="totallyTimeSpent" value="3864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="953" extended-state="0" />
